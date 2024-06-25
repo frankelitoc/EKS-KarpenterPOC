@@ -238,9 +238,6 @@ resource "kubectl_manifest" "karpenter_example_deployment" {
           containers:
             - name: inflate
               image: public.ecr.aws/eks-distro/kubernetes/pause:3.7
-              resources:
-                requests:
-                  cpu: 1
   YAML
 
   depends_on = [
